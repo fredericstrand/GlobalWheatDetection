@@ -1,0 +1,7 @@
+# Paths
+train: data/images/train
+val: data/images/val
+
+# Number of classes
+nc: 20
+# Class names
