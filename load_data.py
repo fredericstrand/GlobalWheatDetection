@@ -1,3 +1,12 @@
+"""
+This file will organize the images and labels in the YOLO format.
+
+To run this file you first need to download the dataset from Kaggle, and then you can run the file. It might take
+a while to process, but it is necessary to train the YOLO model. Temporary, you will have to move the test folder,
+sample_submission.csv, and train.csv to the root directory manually.
+
+"""
+
 import os
 import pandas as pd
 
