@@ -4,7 +4,7 @@ import pandas as pd
 # Define the path YOLO format data
 csv_file = 'global-wheat-detection/train.csv'
 images_dir = 'global-wheat-detection/train'
-output_dir = 'data'
+output_dir = 'train'
 
 # Make the directories for the images and labels for the YOLO model
 os.makedirs(f'{output_dir}/images/train', exist_ok=True)
@@ -28,9 +28,10 @@ train_ids = image_ids[:int(len(image_ids)*0.8)]
 val_ids = image_ids[int(len(image_ids)*0.8):]
 
 # Process each row
+print('Organizing images and labels for YOLO model. This may take a while...')
 for _, row in df.iterrows():
     image_id = row['image_id']
-    bbox = row['bbox']
+    bbox = eval(row['bbox'])
     class_id = 0
 
     img_width, img_height = row['width'], row['height']
@@ -45,3 +46,4 @@ for _, row in df.iterrows():
     src_img_path = f'{images_dir}/{image_id}.jpg'
     dst_img_path = f'{output_dir}/images/{split}/{image_id}.jpg'
     os.system(f'cp {src_img_path} {dst_img_path}')
+    os.system(f'rm -rf global-whaet-detection')

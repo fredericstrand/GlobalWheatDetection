@@ -3,5 +3,8 @@ train: data/images/train
 val: data/images/val
 
 # Number of classes
-nc: 20
+nc: 1
+
 # Class names
+names:
+0: wheat_grain
