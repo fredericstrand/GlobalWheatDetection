@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Input, Dense, Conv2D, GlobalAveragePooling2D
 from ultralytics import YOLO
 from src.Yolov8.data_parser import YOLODataset
 
-base_model = tf.keras.models.load_model('yolov8m')
+base_model = tf.keras.models.load_model('models/yolov8m')
 
 base_model.trainable = False
 
