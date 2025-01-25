@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: yolov8m.pt
 data: dataset.yaml
-epochs: 15
+epochs: 20
 time: null
 patience: 100
 batch: 8
@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 8
 project: src/Yolov8/models/
-name: yolov8m4
+name: yolov8m2
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -103,4 +103,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: src\Yolov8\models\yolov8m4
+save_dir: src\Yolov8\models\yolov8m2
