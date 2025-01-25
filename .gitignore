@@ -1,4 +1,3 @@
 global-wheat-detection
 data
-src/Yolov8/models
 Yolov8m.pt
