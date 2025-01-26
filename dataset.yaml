@@ -1,0 +1,9 @@
+# Training data
+train: ../../data/train/images
+val: ../../data/val/images
+
+# Number of classes
+nc: 1
+
+# Class names
+names: ["wheat"]
