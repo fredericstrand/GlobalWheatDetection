@@ -3,9 +3,9 @@ import pandas as pd
 import shutil
 
 # Define the path YOLO format data
-csv_file = 'global-wheat-detection/train.csv'
-images_dir = 'global-wheat-detection/train'
-output_dir = 'data'
+csv_file = '../global-wheat-detection/train.csv'
+images_dir = '../global-wheat-detection/train'
+output_dir = '../data_yolo'
 
 # Make the directories for the images and labels for the YOLO model
 os.makedirs(f'{output_dir}/train/images', exist_ok=True)
