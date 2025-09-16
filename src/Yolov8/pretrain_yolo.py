@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-base_model = YOLO('yolov8m.pt')
+base_model = YOLO('yolov8x.pt')
 
 # Train the model
 base_model.train(
@@ -10,12 +10,12 @@ base_model.train(
     imgsz=640,
     lr0=0.001,
     project='src/Yolov8/models/',
-    name='yolov8m'
+    name='yolov8x'
 )
 
 base_model.export(format='saved_model',
                   imgsz=640,
                   dynamic=False,
                   project='src/Yolov8/models/',
-                  name='yolov8m'
+                  name='yolov8x'
                   )

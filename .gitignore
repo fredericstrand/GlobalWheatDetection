@@ -1,3 +1,4 @@
 global-wheat-detection
+wheat_heads_detected/
 data
-Yolov8m.pt
+Yolov8x.pt
